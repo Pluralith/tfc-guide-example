@@ -1,4 +1,12 @@
 terraform {
+  cloud {
+     organization = "Pluralith"
+
+     workspaces {
+       name = "tfc-guide-example"
+     }
+  }
+  
   required_providers {
     aws = {
       source  = "hashicorp/aws"
